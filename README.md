@@ -1,2 +1,2 @@
 # csd-430
-Repository for Server Side Development 
+Repository for Server Side Development course. 
