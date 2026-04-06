@@ -1,0 +1,80 @@
+<!--
+Madilyn Carpenter
+4/5/2026
+Assignment: Gathering user data
+Purpose: Create an html page to gather and store user data into a jsp file.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+
+<h1>Developer Job Application Form</h1>
+<p>Please complete the job application form below.</p>
+
+<form action="jobResult.jsp" method="post">
+
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Experience -->
+    <label for="experience">Years of Experience:</label>
+    <input type="number" id="experience" name="experience" min="0" max="500">
+    <br><br>
+
+    <!-- Radio buttons -->
+    <p>Desired Employment Type:</p>
+
+    <input type="radio" id="fulltime" name="employmentType" value="Full Time">
+    <label for="fulltime">Full Time</label><br>
+
+    <input type="radio" id="parttime" name="employmentType" value="Part Time">
+    <label for="parttime">Part Time</label><br>
+
+    <input type="radio" id="internship" name="employmentType" value="Internship">
+    <label for="internship">Internship</label>
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>Skills:</p>
+
+    <input type="checkbox" id="java" name="skills" value="Java">
+    <label for="java">Java</label><br>
+
+    <input type="checkbox" id="python" name="skills" value="Python">
+    <label for="python">Python</label><br>
+
+    <input type="checkbox" id="webdev" name="skills" value="Web Development">
+    <label for="webdev">Web Development</label>
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="position">Position Applying For:</label>
+    <select id="position" name="position">
+        <option>Software Developer</option>
+        <option>Web Designer</option>
+        <option>Data Analyst</option>
+    </select>
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="about">Why should we hire you?</label><br>
+    <textarea id="about" name="about" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit Application">
+
+</form>
+
+</body>
+</html>
