@@ -1,3 +1,10 @@
+<!--
+Madilyn Carpenter
+4/26/2026
+Assignment: Working with CRUD & JavBeans
+Purpose: Create a UI that can intake user data, store it in a database, and return data from the database.
+-->
+
 <%@ page import="java.sql.*" %>
 <%@ page import="myapp.MadilynStatesBean" %>
 
