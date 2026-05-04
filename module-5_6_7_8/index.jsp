@@ -10,3 +10,4 @@ Purpose: Create a UI that can intake user data, store it in a database, and retu
 <a href="selectState.jsp">View Single State</a><br><br>
 <a href="addState.jsp">Add New State</a><br><br>
 <a href="viewAllStates.jsp">View All States</a><br><br>
+<a href="selectStateToUpdate.jsp">Update a State</a><br><br>
