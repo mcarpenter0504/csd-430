@@ -121,4 +121,16 @@ public class MadilynStatesBean implements Serializable {
             e.printStackTrace();
         }
     }
+
+    // DELETE
+    public void deleteState(int id) {
+        try {
+            String sql = "DELETE FROM madilynstatesdata WHERE state_id=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
