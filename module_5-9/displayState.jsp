@@ -18,13 +18,10 @@ Purpose: Create a UI that can intake user data, store it in a database, and retu
 <h1>State Record Details</h1>
 
 <%
-    // Get selected ID from dropdown form
     int id = Integer.parseInt(request.getParameter("state_id"));
 
-    // Create JavaBean (must include package name)
     myapp.MadilynStatesBean bean = new myapp.MadilynStatesBean();
 
-    // Get record from database
     ResultSet rs = bean.getStateById(id);
 %>
 
